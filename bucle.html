@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bucles</title>
+</head>
+<body>
+	<p id="parrafo1"></p>
+</body>
+<script type="text/javascript">
+		var final =	prompt("ingrese cuantos nros buscar");
+		var divisible = prompt("ingrese cuantos nros buscar");
+		var control = 0
+		var incremental =1;
+		do{
+			if(incremental%divisible == 0){
+				document.getElementById('parrafo1').innerHTML += control + " nro " + incremental +  "<br>";
+				control++;
+			}
+			incremental++;
+		}while(control<final)
+
+	// do... while
+		var x,y;
+		x=0
+		y=10
+		do{
+			console.log("do valor "+x);
+			x++;
+			y++;
+		}while(y<=20)
+</script>
+</html>
